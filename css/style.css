@@ -36,18 +36,26 @@ body {
 	}
 }
 
-.stick-at-top {
+.stick {
 	position: fixed;
 	top: 0;
 	width: 100%;
 }
 
-.push-right {
+.push {
 	margin-left: auto;
 }
 
 li {
 	padding: 20px;
+	transition: all 0.3s linear;
+}
+
+li:hover {
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 10px 30px, inset rgba(0,0,0,0.15) 0px -20px 40px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 10px 30px, inset rgba(0,0,0,0.15) 0px -20px 40px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 10px 30px, inset rgba(0,0,0,0.15) 0px -20px 40px;
+	box-shadow:rgba(0,0,0,0.8) 0px 10px 30px, inset rgba(0,0,0,0.15) 0px -20px 40px;
 }
 
 a {
@@ -59,7 +67,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 80vh;
+	height: 80vh; /* View port height. how much is covered by it*/
 }
 
 .cover {
