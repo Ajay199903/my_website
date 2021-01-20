@@ -59,7 +59,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-/* 	height: 50vh; /* View port height. how much is covered by it*/ */
+	height: 100vh;
 }
 
 .cover {
